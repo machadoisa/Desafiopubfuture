@@ -10,3 +10,7 @@ Todos os requisitos pedidos como, receita, contas e despesas trabalham assim!
 Confesso que a parte HTML não é muito dominada por mim, o que será notável no meu projeto :/ 
 
 Espero que gostem e que vejam no meu projeto e em minha pessoa a vontade de aprender mais, e sempre mais! 
+
+Todas as ações feitas estão na tag master, nela encontraram meu trabalho!
+
+Att, Isabela. 
