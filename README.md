@@ -1,7 +1,7 @@
 # Desafiopubfuture
 Desafio para o concurso da pub future 
 
-Olá, meu nome é Isabela Machado e eu tenho 17 anos. Final do ano de 2021 finalizei um curso de Python que é a liguagem do meu projeto. Descobri sobre esse cocurso através da internet e vi nele uma oportunidade de me especializar e aprender mais sobre esse mundo tão tecnológico. 
+Olá, meu nome é Isabela Machado e eu tenho 17 anos. Final do ano de 2021 finalizei um curso de Python que é a liguagem do meu projeto. Descobri sobre esse concurso através da internet e vi nele uma oportunidade de me especializar e aprender mais sobre esse mundo tão tecnológico. 
 
 Sobre meu projeto! 
 
