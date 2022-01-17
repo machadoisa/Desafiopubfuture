@@ -1,13 +1,12 @@
 from django.shortcuts import render, redirect
 from app.forms import ReceitasForm, ContasForm, DespesasForm
-
-# Create your views here.
-
-from django.http import HttpResponse
+from app.models import Receita
 
 
 def home(request):
-    return render(request, 'index.html')
+    data = {}
+    data['db'] = Receita.objects.all()
+    return render(request, 'index.html', data)
 
 def cadastro_receita(request):
     data = {}
@@ -28,6 +27,29 @@ def create(request):
     form = ReceitasForm(request.POST)
     if form.is_valid():
         form.save()
-        return redirect('home')
+        return redirect('/')
 
+def view(request, pk):
+    data = {}
+    data['db'] = Receita.objects.get(pk=pk)
+    return render(request, 'view.html', data)
+
+def edit(request, pk):
+    data = {}
+    data['db'] = Receita.objects.get(pk=pk)
+    data['form'] = ReceitasForm(instance=data['db'])
+    return render(request, 'form_receita.html', data)
+
+def update(request, pk):
+    data = {}
+    data['db'] = Receita.objects.get(pk=pk)
+    form = ReceitasForm(request.POST or None, instance=data['db'])
+    if form.is_valid():
+        form.save()
+        return redirect('/')
+
+def delete(request, pk):
+    db = Receita.objects.get(pk=pk)
+    db.delete()
+    return redirect('/')
 

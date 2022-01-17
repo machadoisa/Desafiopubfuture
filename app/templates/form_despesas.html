@@ -14,7 +14,7 @@
 
 
      <div class="col-8 m-auto pt-2 pb-2 text-center">
-            <form name="form" id="form" method="post">
+            <form name="form" id="form" action="/createdespesas/" method="post">
                 {% csrf_token %}
                 <div class="form-group mt-4">Valor: {{form.valor}}</div>
                 <div class="form-group mt-4">Data Pagamento: {{form.data_pagamento}}</div>
